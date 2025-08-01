@@ -2,979 +2,1355 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <title>Hoofstad</title>
-    	<meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<!-- 
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <title>Hoofstad</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <!-- 
 Power Template 
 https://templatemo.com/tm-508-power
 -->
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        
-        <link rel="stylesheet" href="../static/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../static/css/font-awesome.css">
-        <link rel="stylesheet" href="../static/css/animate.css">
-        <link rel="stylesheet" href="../static/css/templatemo_misc.css">
-        <link rel="stylesheet" href="../static/css/templatemo_style.css">
-        <link rel="stylesheet" href="../static/css/owl-carousel.css">
+    <link
+      href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
 
-        <script src="../static/js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/font-awesome.css" />
+    <link rel="stylesheet" href="../static/css/animate.css" />
+    <link rel="stylesheet" href="../static/css/templatemo_misc.css" />
+    <link rel="stylesheet" href="../static/css/templatemo_style.css" />
+    <link rel="stylesheet" href="../static/css/owl-carousel.css" />
+    <link rel="icon" type="image/jpeg" href="../static/img/hoofstad_logo.png" />
 
-        <style>
-/* Base Styles */
-.about-section {
-    padding: 80px 0;
-    background: #f9f9ff;
-    position: relative;
-}
+    <script src="../static/js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
 
-/* Challenge Section */
-.challenge-box {
-    background: #fff;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow:#2C8242;
-    margin-bottom: 60px;
-    text-align: center;
-}
+    <style>
+      /* Base Styles */
+      .about-section {
+        padding: 1px 0;
+        background: #f9f9ff;
+        position: relative;
+      }
 
-.section-title {
-    font-size: 36px;
-    color: #2a2a2a;
-    margin-bottom: 40px;
-    font-weight: 700;
-    position: relative;
-}
+      /* Challenge Section */
+      .challenge-box {
+        background: #fff;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: #2c8242;
+        margin-bottom: 60px;
+        text-align: center;
+      }
 
-.section-title:after {
-    content: '';
-    display: block;
-    width: 80px;
-    height: 4px;
-    background: #2C8242;
-    margin: 15px auto;
-}
+      .section-title {
+        font-size: 36px;
+        color: #2a2a2a;
+        margin-bottom: 40px;
+        font-weight: 700;
+        position: relative;
+      }
 
-.question-list {
-    max-width: 700px;
-    margin: 0 auto;
-}
+      .section-title:after {
+        content: "";
+        display: block;
+        width: 80px;
+        height: 4px;
+        background: #2c8242;
+        margin: 15px auto;
+      }
 
-.question-item {
-    display: flex;
-    align-items: center;
-    background: #f1f1f1;
-    padding: 20px 25px;
-    margin-bottom: 15px;
-    border-radius: 8px;
-    text-align: left;
-}
+      .question-list {
+        max-width: 700px;
+        margin: 0 auto;
+      }
 
-.question-icon {
-    font-size: 24px;
-    font-weight: 700;
-    color: #2C8242;
-    margin-right: 20px;
-    min-width: 30px;
-    text-align: center;
-}
+      .question-item {
+        display: flex;
+        align-items: center;
+        background: #f1f1f1;
+        padding: 20px 25px;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        text-align: left;
+      }
 
-.question-item p {
-    margin: 0;
-    font-size: 18px;
-    font-weight: 500;
-    color: #2a2a2a;
-}
+      .question-icon {
+        font-size: 24px;
+        font-weight: 700;
+        color: #2c8242;
+        margin-right: 20px;
+        min-width: 30px;
+        text-align: center;
+      }
 
-.solution-statement {
-    margin-top: 40px;
-}
+      .question-item p {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 500;
+        color: #2a2a2a;
+      }
 
-.solution-statement h3 {
-    font-size: 28px;
-    color: #2a2a2a;
-}
+      .solution-statement {
+        margin-top: 40px;
+      }
 
-.highlight {
-    color: #2C8242;
-    font-weight: 700;
-}
-
-/* Value Proposition */
-.value-row {
-    margin-bottom: 60px;
-}
-
-.value-card {
-    background: #fff;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 15px 30px rgba(0,0,0,0.05);
-    height: 100%;
-}
-
-.value-card h3 {
-    font-size: 28px;
-    color: #2a2a2a;
-    margin-bottom: 25px;
-}
-
-.value-card p {
-    font-size: 16px;
-    line-height: 1.8;
-    margin-bottom: 25px;
-}
-
-.value-list {
-    list-style: none;
-    padding: 0;
-}
-
-.value-list li {
-    margin-bottom: 15px;
-    font-size: 17px;
-    display: flex;
-    align-items: center;
-}
-
-.value-list i {
-    color: #2C8242;
-    margin-right: 15px;
-    font-size: 20px;
-}
-
-.stats-box {
-    background:#1F5C2F;
-    padding: 40px 30px;
-    border-radius: 10px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: white;
-}
-
-.stat-item {
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-.stat-number {
-    font-size: 42px;
-    font-weight: 700;
-    line-height: 1;
-    margin-bottom: 10px;
-}
-
-.stat-label {
-    font-size: 16px;
-    line-height: 1.4;
-}
-
-/* Mission/Vision */
-.mission-row {
-    margin-bottom: 30px;
-}
-
-.mission-card, .vision-card {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: #1F5C2F;
-    height: 100%;
-    overflow: hidden;
-}
-
-.card-header {
-    background: #1F5C2F;
-    padding: 25px 30px;
-    color: white;
-    display: flex;
-    align-items: center;
-}
-
-.vision-card .card-header {
-    background: #1F5C2F;
-}
-
-.card-header i {
-    font-size: 28px;
-    margin-right: 15px;
-}
-
-.card-header h4 {
-    font-size: 22px;
-    margin: 0;
-}
-
-.card-body {
-    padding: 30px;
-}
-
-.card-body p {
-    font-size: 16px;
-    line-height: 1.8;
-    margin: 0;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 991px) {
-    .value-row {
-        flex-direction: column-reverse;
-    }
-    
-    .stats-box {
-        margin-bottom: 30px;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    
-    .stat-item {
-        margin-bottom: 0;
-        padding: 0 15px;
-    }
-}
-
-@media (max-width: 767px) {
-    .section-title {
+      .solution-statement h3 {
         font-size: 28px;
-    }
-    
-    .question-item p {
+        color: #2a2a2a;
+      }
+
+      .highlight {
+        color: #2c8242;
+        font-weight: 700;
+      }
+
+      /* Value Proposition */
+      .value-row {
+        margin-bottom: 60px;
+      }
+
+      .value-card {
+        background: #fff;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+        height: 100%;
+      }
+
+      .value-card h3 {
+        font-size: 28px;
+        color: #2a2a2a;
+        margin-bottom: 25px;
+      }
+
+      .value-card p {
         font-size: 16px;
-    }
-    
-    .solution-statement h3 {
+        line-height: 1.8;
+        margin-bottom: 25px;
+      }
+
+      .value-list {
+        list-style: none;
+        padding: 0;
+      }
+
+      .value-list li {
+        margin-bottom: 15px;
+        font-size: 17px;
+        display: flex;
+        align-items: center;
+      }
+
+      .value-list i {
+        color: #2c8242;
+        margin-right: 15px;
+        font-size: 20px;
+      }
+
+      .stats-box {
+        background: #1f5c2f;
+        padding: 40px 30px;
+        border-radius: 10px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+      }
+
+      .stat-item {
+        margin-bottom: 30px;
+        text-align: center;
+      }
+
+      .stat-number {
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 1;
+        margin-bottom: 10px;
+      }
+
+      .stat-label {
+        font-size: 16px;
+        line-height: 1.4;
+      }
+
+      /* Mission/Vision */
+      .mission-row {
+        margin-bottom: 30px;
+      }
+
+      .mission-card,
+      .vision-card {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: #1f5c2f;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      .card-header {
+        background: #1f5c2f;
+        padding: 25px 30px;
+        color: white;
+        display: flex;
+        align-items: center;
+      }
+
+      .vision-card .card-header {
+        background: #1f5c2f;
+      }
+
+      .card-header i {
+        font-size: 28px;
+        margin-right: 15px;
+      }
+
+      .card-header h4 {
         font-size: 22px;
-    }
-}
-</style>
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
-        <![endif]-->
+        margin: 0;
+      }
 
+      .card-body {
+        padding: 30px;
+      }
 
-       <div class="site-main" id="sTop">
-    <div class="site-header">
+      .card-body p {
+        font-size: 16px;
+        line-height: 1.8;
+        margin: 0;
+      }
+      .video-section {
+        background: #f9f9ff;
+        padding: 60px 0;
+        text-align: center;
+      }
+
+      .video-section .section-title {
+        font-size: 36px;
+        margin-bottom: 15px;
+        color: #2a2a2a;
+      }
+
+      .video-section iframe {
+        border-radius: 12px;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+      }
+
+      /* Responsive Adjustments */
+      @media (max-width: 991px) {
+        .value-row {
+          flex-direction: column-reverse;
+        }
+
+        .stats-box {
+          margin-bottom: 30px;
+          flex-direction: row;
+          justify-content: space-around;
+        }
+
+        .stat-item {
+          margin-bottom: 0;
+          padding: 0 15px;
+        }
+      }
+
+      @media (max-width: 767px) {
+        .section-title {
+          font-size: 28px;
+        }
+
+        .question-item p {
+          font-size: 16px;
+        }
+
+        .solution-statement h3 {
+          font-size: 22px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="chromeframe">
+        You are using an outdated browser.
+        <a href="http://browsehappy.com/">Upgrade your browser today</a> or
+        <a href="http://www.google.com/chromeframe/?redirect=true"
+          >install Google Chrome Frame</a
+        >
+        to better experience this site.
+      </p>
+    <![endif]-->
+
+    <div class="site-main" id="sTop">
+      <div class="site-header">
         <div class="main-header">
-            <div class="container">
-                <div id="menu-wrapper">
-                    <div class="row">
-                        <nav class="navbar navbar-inverse" role="navigation">
-                            <div class="navbar-header">
-                                <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
-                                    <span class="sr-only">Toggle navigation</span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </button>
-                                <a href="#top" class="navbar-brand">
-                                    <img src="../static/img/hoofstad_logo.jpeg" alt="Hoofstad Logo" class="logo-img" style="height: 60px; display: inline-block; vertical-align: middle;">
-                                    <span style="display: inline-block; vertical-align: middle;">Hoofstad</span>
-                                </a>
-                                <div id="main-nav" class="collapse navbar-collapse">
-                                    <ul class="menu-first nav navbar-nav" style="margin-right: 20px;">
-                                        <li class="active"><a href="#">Home</a></li>
-                                        <li><a href="#about">About Us</a></li>
-                                        <li><a href="#portfolio">Services</a></li>
-                                        <li><a href="#contact-us">Contact</a></li>                                 
-                                    </ul>                                    
-                                </div> <!-- /.main-menu -->
-                            </div>
-                        </nav>
-                    </div> <!-- /.row -->
-                </div> <!-- /#menu-wrapper -->                        
-            </div> <!-- /.container -->
-        </div> <!-- /.main-header -->
-    </div> <!-- /.site-header -->
-</div> <!-- /.site-main -->
-
-
-       <div class="banner">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <div class="banner-content">
-                    <h6>Expert-Led Business Solutions</h6>
-                    <h2>Hoofstad</h2>
-                    <ul class="buttons">
-                        <li>
-                            <div class="primary-button">
-                                <a href="#contact-us">Get a Free Consultation</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="secondary-button">
-                                <a href="#about">Learn About Us</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-        <div class="intro">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h4>Transform Your Business with Strategic Expertise</h4>
-                <h6>CONSULTING | TRAINING | GROWTH STRATEGIES</h6>
-                <div class="border-button"><a href="#portfolio">Explore Services</a></div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-        <section id="about" class="page-section">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="service-item first-service">
-                    <div class="icon">
-                        <img src="../static/img/first-service-icon.png" alt="Consulting Icon">
+          <div class="container">
+            <div id="menu-wrapper">
+              <div class="row">
+                <nav class="navbar navbar-inverse" role="navigation">
+                  <div class="navbar-header">
+                    <button
+                      type="button"
+                      id="nav-toggle"
+                      class="navbar-toggle"
+                      data-toggle="collapse"
+                      data-target="#main-nav"
+                    >
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a href="#top" class="navbar-brand">
+                      <img
+                        src="../static/img/hoofstad_logo.png"
+                        alt="Hoofstad Logo"
+                        class="logo-img"
+                        style="
+                          height: 60px;
+                          display: inline-block;
+                          vertical-align: middle;
+                        "
+                      />
+                      <span
+                        style="display: inline-block; vertical-align: middle"
+                        >Hoofstad</span
+                      >
+                    </a>
+                    <div id="main-nav" class="collapse navbar-collapse">
+                      <ul
+                        class="menu-first nav navbar-nav"
+                        style="margin-right: 20px"
+                      >
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#portfolio">Services</a></li>
+                        <li><a href="#contact-us">Contact</a></li>
+                      </ul>
                     </div>
-                    <h4>Business Consulting</h4>
-                    <p>Tailored strategies to optimize operations, streamline processes, and drive profitability. We analyze your challenges and deliver actionable solutions.</p>
-                </div>
+                    <!-- /.main-menu -->
+                  </div>
+                </nav>
+              </div>
+              <!-- /.row -->
             </div>
-            <div class="col-md-4">
-                <div class="service-item second-service">
-                    <div class="icon">
-                        <img src="../static/img/second-service-icon.png" alt="Training Icon">
-                    </div>
-                    <h4>Corporate Training</h4>
-                    <p>Upskill your team with workshops in leadership, sales, and digital transformation. Customized programs to meet your organizational goals.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="service-item third-service">
-                    <div class="icon">
-                        <img src="../static/img/third-service-icon.png" alt="Strategy Icon">
-                    </div>
-                    <h4>Growth Strategies</h4>
-                    <p>Data-driven market analysis and expansion plans to scale your business sustainably. From startups to enterprises, we fuel your growth.</p>
-                </div>
-            </div>
+            <!-- /#menu-wrapper -->
+          </div>
+          <!-- /.container -->
         </div>
+        <!-- /.main-header -->
+      </div>
+      <!-- /.site-header -->
     </div>
-</section>
+    <!-- /.site-main -->
 
+    <div class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <div class="banner-content">
+              <h6>Expert-Led Business Solutions</h6>
+              <h2>Hoofstad</h2>
+              <ul class="buttons">
+                <li>
+                  <div class="primary-button">
+                    <a href="#contact-us">Get a Free Consultation</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="secondary-button">
+                    <a href="#about">Learn About Us</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<section class="about-section">
-    <div class="container">
+    <div class="intro">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h4>Transform Your Business with Strategic Expertise</h4>
+            <h6>CONSULTING | TRAINING | GROWTH STRATEGIES</h6>
+            <div class="border-button">
+              <a href="#portfolio">Explore Services</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="about" class="page-section">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="service-item first-service">
+              <div class="icon">
+                <img
+                  src="../static/img/first-service-icon.png"
+                  alt="Consulting Icon"
+                />
+              </div>
+              <h4>Business Consulting</h4>
+              <p>
+                Tailored strategies to optimize operations, streamline
+                processes, and drive profitability. We analyze your challenges
+                and deliver actionable solutions.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-item second-service">
+              <div class="icon">
+                <img
+                  src="../static/img/second-service-icon.png"
+                  alt="Training Icon"
+                />
+              </div>
+              <h4>Corporate Training</h4>
+              <p>
+                Upskill your team with workshops in leadership, sales, and
+                digital transformation. Customized programs to meet your
+                organizational goals.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-item third-service">
+              <div class="icon">
+                <img
+                  src="../static/img/third-service-icon.png"
+                  alt="Strategy Icon"
+                />
+              </div>
+              <h4>Growth Strategies</h4>
+              <p>
+                Data-driven market analysis and expansion plans to scale your
+                business sustainably. From startups to enterprises, we fuel your
+                growth.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="container">
         <!-- Challenge Section -->
         <div class="row challenge-row">
-            <div class="col-md-12">
-                <div class="challenge-box">
-                    <h2 class="section-title">The Hard Questions Every Business Must Answer</h2>
-                    <div class="question-list">
-                        <div class="question-item">
-                            <span class="question-icon">?</span>
-                            <p>Are you in business?</p>
-                        </div>
-                        <div class="question-item">
-                            <span class="question-icon">?</span>
-                            <p>Are you reaching as many customers as you should be by now?</p>
-                        </div>
-                        <div class="question-item">
-                            <span class="question-icon">?</span>
-                            <p>Is your sales team converting high-value opportunities?</p>
-                        </div>
-                        <div class="question-item">
-                            <span class="question-icon">?</span>
-                            <p>Is your sales team letting high value customers slide right through their fingers?</p>
-                        </div>
-                        <div class="question-item">
-                            <span class="question-icon">?</span>
-                            <p>Or do you just want to up skill in business?</p>
-                        </div>
-                    </div>
-                    <div class="solution-statement">
-                        <h3>We transform these challenges into <span class="highlight">growth opportunities</span></h3>
-                    </div>
+          <div class="col-md-12">
+            <div class="challenge-box">
+              <h2 class="section-title">
+                The Hard Questions Every Business Must Answer
+              </h2>
+              <div class="question-list">
+                <div class="question-item">
+                  <span class="question-icon">?</span>
+                  <p>Are you in business?</p>
                 </div>
+                <div class="question-item">
+                  <span class="question-icon">?</span>
+                  <p>
+                    Are you reaching as many customers as you should be by now?
+                  </p>
+                </div>
+                <div class="question-item">
+                  <span class="question-icon">?</span>
+                  <p>Is your sales team converting high-value opportunities?</p>
+                </div>
+                <div class="question-item">
+                  <span class="question-icon">?</span>
+                  <p>
+                    Is your sales team letting high value customers slide right
+                    through their fingers?
+                  </p>
+                </div>
+                <div class="question-item">
+                  <span class="question-icon">?</span>
+                  <p>Or do you just want to up skill in business?</p>
+                </div>
+              </div>
+              <div class="solution-statement">
+                <h3>
+                  We transform these challenges into
+                  <span class="highlight">growth opportunities</span>
+                </h3>
+              </div>
             </div>
+          </div>
         </div>
 
         <!-- Value Proposition -->
         <div class="row value-row">
-            <div class="col-md-8">
-                <div class="value-card">
-                    <h3>Your Business Transformation Partner</h3>
-                    <p>Whether you're taking your first steps in the market or optimizing an established enterprise, we provide the exact tools and training you need to:</p>
-                    <ul class="value-list">
-                        <li><i class="fas fa-bullseye"></i> Convert more prospects</li>
-                        <li><i class="fas fa-chart-line"></i> Maximize team performance</li>
-                        <li><i class="fas fa-shield-alt"></i> Secure your market position</li>
-                    </ul>
-                </div>
+          <div class="col-md-8">
+            <div class="value-card">
+              <h3>Your Business Transformation Partner</h3>
+              <p>
+                Whether you're taking your first steps in the market or
+                optimizing an established enterprise, we provide the exact tools
+                and training you need to:
+              </p>
+              <ul class="value-list">
+                <li><i class="fas fa-bullseye"></i> Convert more prospects</li>
+                <li>
+                  <i class="fas fa-chart-line"></i> Maximize team performance
+                </li>
+                <li>
+                  <i class="fas fa-shield-alt"></i> Secure your market position
+                </li>
+              </ul>
             </div>
-            <div class="col-md-4">
-                <div class="stats-box">
-                    <div class="stat-item">
-                        <div class="stat-number">100%</div>
-                        <div class="stat-label">Custom Solutions</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">X2</div>
-                        <div class="stat-label">Average Performance Improvement</div>
-                    </div>
-                </div>
+          </div>
+          <div class="col-md-4">
+            <div class="stats-box">
+              <div class="stat-item">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Custom Solutions</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">X2</div>
+                <div class="stat-label">Average Performance Improvement</div>
+              </div>
             </div>
+          </div>
         </div>
 
         <!-- Mission/Vision -->
         <div class="row mission-row">
-            <div class="col-md-6">
-                <div class="mission-card">
-                    <div class="card-header">
-                        <i class="fas fa-rocket"></i>
-                        <h4>Our Mission</h4>
-                    </div>
-                    <div class="card-body">
-                        <p>To equip businesses with battle-tested skills that transform underperforming teams into market leaders.</p>
-                    </div>
-                </div>
+          <div class="col-md-6">
+            <div class="mission-card">
+              <div class="card-header">
+                <i class="fas fa-rocket"></i>
+                <h4>Our Mission</h4>
+              </div>
+              <div class="card-body">
+                <p>
+                  To equip businesses with battle-tested skills that transform
+                  underperforming teams into market leaders.
+                </p>
+              </div>
             </div>
-            <div class="col-md-6">
-                <div class="vision-card">
-                    <div class="card-header">
-                        <i class="fas fa-eye"></i>
-                        <h4>Our Vision</h4>
-                    </div>
-                    <div class="card-body">
-                        <p>A business landscape where every team operates with confidence and no opportunity is lost to lack of expertise.</p>
-                    </div>
-                </div>
+          </div>
+          <div class="col-md-6">
+            <div class="vision-card">
+              <div class="card-header">
+                <i class="fas fa-eye"></i>
+                <h4>Our Vision</h4>
+              </div>
+              <div class="card-body">
+                <p>
+                  A business landscape where every team operates with confidence
+                  and no opportunity is lost to lack of expertise.
+                </p>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
+    <!-- YouTube Video Section -->
+    <section class="video-section" style="background: #f9f9ff; padding: 60px 0">
+      <div class="container text-center">
+        <h2 class="section-title mb-4">Watch Our Business Insights</h2>
+        <p class="mb-5">
+          See how we empower businesses through strategy, training, and systems.
+        </p>
 
-       <section id="portfolio" class="portfolio-section">
-    <div class="container">
+        <div class="row justify-content-center">
+          <!-- Video 1 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="embed-responsive embed-responsive-16by9 shadow rounded">
+              <iframe
+                class="embed-responsive-item"
+                src="https://www.youtube.com/embed/v1B-qYgeajg"
+                title="Hoofstad Video 1"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+
+          <!-- Video 2 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="embed-responsive embed-responsive-16by9 shadow rounded">
+              <iframe
+                class="embed-responsive-item"
+                src="https://www.youtube.com/embed/y-YvC9SwiiI"
+                title="Hoofstad Video 2"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+
+          <!-- Video 3 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="embed-responsive embed-responsive-16by9 shadow rounded">
+              <iframe
+                class="embed-responsive-item"
+                src="https://www.youtube.com/embed/WJqVm980iIs"
+                title="Hoofstad Video 3"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="portfolio-section">
+      <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <div class="section-heading">
-                    <h2>Our Services</h2>
-                    <p>Tailored training solutions for every professional need and career stage</p>
-                </div>
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>Our Services</h2>
+              <p>
+                Tailored training solutions for every professional need and
+                career stage
+              </p>
             </div>
+          </div>
         </div>
         <div class="row">
-            <div id="owl-portfolio" class="owl-carousel owl-theme imageGallery1">
-                <!-- Item 1: Sales Excellence -->
-                <div class="item">
-                    <div class="portfolio-item">
-                        <a href="javascript:void(0)" title="Sales Excellence">
-                            <div class="icon-wrapper" style="background-color: #4e8cff; padding: 30px; text-align: center;">
-                                <i class="fas fa-trophy" style="font-size: 60px; color: white;"></i>
-                            </div>
-                            <div class="portfolio-overlay">
-                                <h6>Sales Excellence</h6>
-                                <p>Training for sales teams</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Item 2: Customer Service -->
-                <div class="item">
-                    <div class="portfolio-item">
-                        <a href="javascript:void(0)" title="Customer Service">
-                            <div class="icon-wrapper" style="background-color: #6f42c1; padding: 30px; text-align: center;">
-                                <i class="fas fa-headset" style="font-size: 60px; color: white;"></i>
-                            </div>
-                            <div class="portfolio-overlay">
-                                <h6>Customer Service Mastery</h6>
-                                <p>Training for service reps</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Item 3: Product Development -->
-                <div class="item">
-                    <div class="portfolio-item">
-                        <a href="javascript:void(0)" title="Product Development">
-                            <div class="icon-wrapper" style="background-color: #28a745; padding: 30px; text-align: center;">
-                                <i class="fas fa-lightbulb" style="font-size: 60px; color: white;"></i>
-                            </div>
-                            <div class="portfolio-overlay">
-                                <h6>Product Innovation</h6>
-                                <p>Ideation to launch</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Item 4: Financial Management -->
-                <div class="item">
-                    <div class="portfolio-item">
-                        <a href="javascript:void(0)" title="Financial Management">
-                            <div class="icon-wrapper" style="background-color: #fd7e14; padding: 30px; text-align: center;">
-                                <i class="fas fa-calculator" style="font-size: 60px; color: white;"></i>
-                            </div>
-                            <div class="portfolio-overlay">
-                                <h6>Financial Operations</h6>
-                                <p>Tax and bookkeeping</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Item 5: Business Operations -->
-                <div class="item">
-                    <div class="portfolio-item">
-                        <a href="javascript:void(0)" title="Business Operations">
-                            <div class="icon-wrapper" style="background-color: #e83e8c; padding: 30px; text-align: center;">
-                                <i class="fas fa-cogs" style="font-size: 60px; color: white;"></i>
-                            </div>
-                            <div class="portfolio-overlay">
-                                <h6>Business Operations</h6>
-                                <p>Process streamlining</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Item 6: Youth Entrepreneurship -->
-                <div class="item">
-                    <div class="portfolio-item">
-                        <a href="javascript:void(0)" title="Youth Entrepreneurship">
-                            <div class="icon-wrapper" style="background-color: #20c997; padding: 30px; text-align: center;">
-                                <i class="fas fa-business-time" style="font-size: 60px; color: white;"></i>
-                            </div>
-                            <div class="portfolio-overlay">
-                                <h6>Youth Entrepreneurship</h6>
-                                <p>Business skills for students</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Item 7: Tech Education -->
-                <div class="item">
-                    <div class="portfolio-item">
-                        <a href="javascript:void(0)" title="Tech Education">
-                            <div class="icon-wrapper" style="background-color: #17a2b8; padding: 30px; text-align: center;">
-                                <i class="fas fa-code" style="font-size: 60px; color: white;"></i>
-                            </div>
-                            <div class="portfolio-overlay">
-                                <h6>Tech Education</h6>
-                                <p>Coding fundamentals</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Item 8: Robotics -->
-                <div class="item">
-                    <div class="portfolio-item">
-                        <a href="javascript:void(0)" title="Robotics">
-                            <div class="icon-wrapper" style="background-color: #ffc107; padding: 30px; text-align: center;">
-                                <i class="fas fa-robot" style="font-size: 60px; color: white;"></i>
-                            </div>
-                            <div class="portfolio-overlay">
-                                <h6>Robotics Programs</h6>
-                                <p>STEM learning</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Item 9: Executive Communication -->
-                <div class="item">
-                    <div class="portfolio-item">
-                        <a href="javascript:void(0)" title="Executive Communication">
-                            <div class="icon-wrapper" style="background-color: #dc3545; padding: 30px; text-align: center;">
-                                <i class="fas fa-comments-dollar" style="font-size: 60px; color: white;"></i>
-                            </div>
-                            <div class="portfolio-overlay">
-                                <h6>Executive Communication</h6>
-                                <p>For corporate leaders</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Item 10: Wealth Preservation -->
-                <div class="item">
-                    <div class="portfolio-item">
-                        <a href="javascript:void(0)" title="Wealth Preservation">
-                            <div class="icon-wrapper" style="background-color: #6610f2; padding: 30px; text-align: center;">
-                                <i class="fas fa-piggy-bank" style="font-size: 60px; color: white;"></i>
-                            </div>
-                            <div class="portfolio-overlay">
-                                <h6>Wealth Preservation</h6>
-                                <p>Investment strategies</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+          <div id="owl-portfolio" class="owl-carousel owl-theme imageGallery1">
+            <!-- Item 1: Sales Excellence -->
+            <div class="item">
+              <div class="portfolio-item">
+                <a href="javascript:void(0)" title="Sales Excellence">
+                  <div
+                    class="icon-wrapper"
+                    style="
+                      background-color: #4e8cff;
+                      padding: 30px;
+                      text-align: center;
+                    "
+                  >
+                    <i
+                      class="fas fa-trophy"
+                      style="font-size: 60px; color: white"
+                    ></i>
+                  </div>
+                  <div class="portfolio-overlay">
+                    <h6>Sales Excellence</h6>
+                    <p>Training for sales teams</p>
+                  </div>
+                </a>
+              </div>
             </div>
-        </div>
-    </div>
-</section>
 
-       <section class="services-section" id="services">
-    <div class="container">
+            <!-- Item 2: Customer Service -->
+            <div class="item">
+              <div class="portfolio-item">
+                <a href="javascript:void(0)" title="Customer Service">
+                  <div
+                    class="icon-wrapper"
+                    style="
+                      background-color: #6f42c1;
+                      padding: 30px;
+                      text-align: center;
+                    "
+                  >
+                    <i
+                      class="fas fa-headset"
+                      style="font-size: 60px; color: white"
+                    ></i>
+                  </div>
+                  <div class="portfolio-overlay">
+                    <h6>Customer Service Mastery</h6>
+                    <p>Training for service reps</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- Item 3: Product Development -->
+            <div class="item">
+              <div class="portfolio-item">
+                <a href="javascript:void(0)" title="Product Development">
+                  <div
+                    class="icon-wrapper"
+                    style="
+                      background-color: #28a745;
+                      padding: 30px;
+                      text-align: center;
+                    "
+                  >
+                    <i
+                      class="fas fa-lightbulb"
+                      style="font-size: 60px; color: white"
+                    ></i>
+                  </div>
+                  <div class="portfolio-overlay">
+                    <h6>Product Innovation</h6>
+                    <p>Ideation to launch</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- Item 4: Financial Management -->
+            <div class="item">
+              <div class="portfolio-item">
+                <a href="javascript:void(0)" title="Financial Management">
+                  <div
+                    class="icon-wrapper"
+                    style="
+                      background-color: #fd7e14;
+                      padding: 30px;
+                      text-align: center;
+                    "
+                  >
+                    <i
+                      class="fas fa-calculator"
+                      style="font-size: 60px; color: white"
+                    ></i>
+                  </div>
+                  <div class="portfolio-overlay">
+                    <h6>Financial Operations</h6>
+                    <p>Tax and bookkeeping</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- Item 5: Business Operations -->
+            <div class="item">
+              <div class="portfolio-item">
+                <a href="javascript:void(0)" title="Business Operations">
+                  <div
+                    class="icon-wrapper"
+                    style="
+                      background-color: #e83e8c;
+                      padding: 30px;
+                      text-align: center;
+                    "
+                  >
+                    <i
+                      class="fas fa-cogs"
+                      style="font-size: 60px; color: white"
+                    ></i>
+                  </div>
+                  <div class="portfolio-overlay">
+                    <h6>Business Operations</h6>
+                    <p>Process streamlining</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- Item 6: Youth Entrepreneurship -->
+            <div class="item">
+              <div class="portfolio-item">
+                <a href="javascript:void(0)" title="Youth Entrepreneurship">
+                  <div
+                    class="icon-wrapper"
+                    style="
+                      background-color: #20c997;
+                      padding: 30px;
+                      text-align: center;
+                    "
+                  >
+                    <i
+                      class="fas fa-business-time"
+                      style="font-size: 60px; color: white"
+                    ></i>
+                  </div>
+                  <div class="portfolio-overlay">
+                    <h6>Youth Entrepreneurship</h6>
+                    <p>Business skills for students</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- Item 7: Tech Education -->
+            <div class="item">
+              <div class="portfolio-item">
+                <a href="javascript:void(0)" title="Tech Education">
+                  <div
+                    class="icon-wrapper"
+                    style="
+                      background-color: #17a2b8;
+                      padding: 30px;
+                      text-align: center;
+                    "
+                  >
+                    <i
+                      class="fas fa-code"
+                      style="font-size: 60px; color: white"
+                    ></i>
+                  </div>
+                  <div class="portfolio-overlay">
+                    <h6>Tech Education</h6>
+                    <p>Coding fundamentals</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- Item 8: Robotics -->
+            <div class="item">
+              <div class="portfolio-item">
+                <a href="javascript:void(0)" title="Robotics">
+                  <div
+                    class="icon-wrapper"
+                    style="
+                      background-color: #ffc107;
+                      padding: 30px;
+                      text-align: center;
+                    "
+                  >
+                    <i
+                      class="fas fa-robot"
+                      style="font-size: 60px; color: white"
+                    ></i>
+                  </div>
+                  <div class="portfolio-overlay">
+                    <h6>Robotics Programs</h6>
+                    <p>STEM learning</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- Item 9: Executive Communication -->
+            <div class="item">
+              <div class="portfolio-item">
+                <a href="javascript:void(0)" title="Executive Communication">
+                  <div
+                    class="icon-wrapper"
+                    style="
+                      background-color: #dc3545;
+                      padding: 30px;
+                      text-align: center;
+                    "
+                  >
+                    <i
+                      class="fas fa-comments-dollar"
+                      style="font-size: 60px; color: white"
+                    ></i>
+                  </div>
+                  <div class="portfolio-overlay">
+                    <h6>Executive Communication</h6>
+                    <p>For corporate leaders</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- Item 10: Wealth Preservation -->
+            <div class="item">
+              <div class="portfolio-item">
+                <a href="javascript:void(0)" title="Wealth Preservation">
+                  <div
+                    class="icon-wrapper"
+                    style="
+                      background-color: #6610f2;
+                      padding: 30px;
+                      text-align: center;
+                    "
+                  >
+                    <i
+                      class="fas fa-piggy-bank"
+                      style="font-size: 60px; color: white"
+                    ></i>
+                  </div>
+                  <div class="portfolio-overlay">
+                    <h6>Wealth Preservation</h6>
+                    <p>Investment strategies</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services-section" id="services">
+      <div class="container">
         <div class="section-header">
-            <h2>Our Core Expertise</h2>
-            <p class="subtitle">Specialized training and consulting services tailored to your professional needs</p>
+          <h2>Our Core Expertise</h2>
+          <p class="subtitle">
+            Specialized training and consulting services tailored to your
+            professional needs
+          </p>
         </div>
 
         <div class="services-grid">
-            <!-- Service 1: Sales -->
-            <div class="service-card sales">
-                <div class="service-icon">
-                    <i class="fas fa-trophy"></i>
-                </div>
-                <h3>Sales Excellence</h3>
-                <p>Top-tier training for salespersons and sales teams to dominate your market</p>
-                
+          <!-- Service 1: Sales -->
+          <div class="service-card sales">
+            <div class="service-icon">
+              <i class="fas fa-trophy"></i>
             </div>
+            <h3>Sales Excellence</h3>
+            <p>
+              Top-tier training for salespersons and sales teams to dominate
+              your market
+            </p>
+          </div>
 
-            <!-- Service 2: Customer Service -->
-            <div class="service-card customer-service">
-                <div class="service-icon">
-                    <i class="fas fa-headset"></i>
-                </div>
-                <h3>Customer Service Mastery</h3>
-                <p>Transform your customer service representatives into brand ambassadors</p>
+          <!-- Service 2: Customer Service -->
+          <div class="service-card customer-service">
+            <div class="service-icon">
+              <i class="fas fa-headset"></i>
             </div>
+            <h3>Customer Service Mastery</h3>
+            <p>
+              Transform your customer service representatives into brand
+              ambassadors
+            </p>
+          </div>
 
-            <!-- Service 3: Product Development -->
-            <div class="service-card product-dev">
-                <div class="service-icon">
-                    <i class="fas fa-lightbulb"></i>
-                </div>
-                <h3>Product Innovation</h3>
-                <p>From ideation to launch for business beginners and innovators</p>
+          <!-- Service 3: Product Development -->
+          <div class="service-card product-dev">
+            <div class="service-icon">
+              <i class="fas fa-lightbulb"></i>
             </div>
+            <h3>Product Innovation</h3>
+            <p>From ideation to launch for business beginners and innovators</p>
+          </div>
 
-            <!-- Service 4: Financial Management -->
-            <div class="service-card finance">
-                <div class="service-icon">
-                    <i class="fas fa-calculator"></i>
-                </div>
-                <h3>Financial Operations</h3>
-                <p>Tax management and bookkeeping for finance professionals</p>
+          <!-- Service 4: Financial Management -->
+          <div class="service-card finance">
+            <div class="service-icon">
+              <i class="fas fa-calculator"></i>
             </div>
+            <h3>Financial Operations</h3>
+            <p>Tax management and bookkeeping for finance professionals</p>
+          </div>
 
-            <!-- Service 5: Business Operations -->
-            <div class="service-card operations">
-                <div class="service-icon">
-                    <i class="fas fa-cogs"></i>
-                </div>
-                <h3>Business Operations</h3>
-                <p>Streamline processes for managers and executives</p>
+          <!-- Service 5: Business Operations -->
+          <div class="service-card operations">
+            <div class="service-icon">
+              <i class="fas fa-cogs"></i>
             </div>
+            <h3>Business Operations</h3>
+            <p>Streamline processes for managers and executives</p>
+          </div>
 
-            <!-- Service 6-10 would follow the same pattern -->
-             <!-- Service 6: Entrepreneurship -->
-<div class="service-card entrepreneurship">
-    <div class="service-icon">
-        <i class="fas fa-business-time"></i>
-    </div>
-    <h3>Youth Entrepreneurship</h3>
-    <p>Empowering senior schoolers with foundational business skills and startup mindset</p>
-</div>
+          <!-- Service 6-10 would follow the same pattern -->
+          <!-- Service 6: Entrepreneurship -->
+          <div class="service-card entrepreneurship">
+            <div class="service-icon">
+              <i class="fas fa-business-time"></i>
+            </div>
+            <h3>Youth Entrepreneurship</h3>
+            <p>
+              Empowering senior schoolers with foundational business skills and
+              startup mindset
+            </p>
+          </div>
 
-<!-- Service 7: Coding -->
-<div class="service-card coding">
-    <div class="service-icon">
-        <i class="fas fa-code"></i>
-    </div>
-    <h3>Tech Education</h3>
-    <p>Coding fundamentals for junior and senior schoolers to future-proof their careers</p>
-</div>
+          <!-- Service 7: Coding -->
+          <div class="service-card coding">
+            <div class="service-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>Tech Education</h3>
+            <p>
+              Coding fundamentals for junior and senior schoolers to
+              future-proof their careers
+            </p>
+          </div>
 
-<!-- Service 8: Robotics -->
-<div class="service-card robotics">
-    <div class="service-icon">
-        <i class="fas fa-robot"></i>
-    </div>
-    <h3>Robotics Programs</h3>
-    <p>Hands-on STEM learning for first graders through high school students</p>
-</div>
+          <!-- Service 8: Robotics -->
+          <div class="service-card robotics">
+            <div class="service-icon">
+              <i class="fas fa-robot"></i>
+            </div>
+            <h3>Robotics Programs</h3>
+            <p>
+              Hands-on STEM learning for first graders through high school
+              students
+            </p>
+          </div>
 
-<!-- Service 9: Business Communication -->
-<div class="service-card business-comms">
-    <div class="service-icon">
-        <i class="fas fa-comments-dollar"></i>
-    </div>
-    <h3>Executive Communication</h3>
-    <p>Advanced business communication for elite owners and corporate leaders</p>
-</div>
+          <!-- Service 9: Business Communication -->
+          <div class="service-card business-comms">
+            <div class="service-icon">
+              <i class="fas fa-comments-dollar"></i>
+            </div>
+            <h3>Executive Communication</h3>
+            <p>
+              Advanced business communication for elite owners and corporate
+              leaders
+            </p>
+          </div>
 
-<!-- Service 10: Retirement Planning -->
-<div class="service-card retirement">
-    <div class="service-icon">
-        <i class="fas fa-piggy-bank"></i>
-    </div>
-    <h3>Wealth Preservation</h3>
-    <p>Money management and investment strategies for retirees and pre-retirees</p>
-</div>
+          <!-- Service 10: Retirement Planning -->
+          <div class="service-card retirement">
+            <div class="service-icon">
+              <i class="fas fa-piggy-bank"></i>
+            </div>
+            <h3>Wealth Preservation</h3>
+            <p>
+              Money management and investment strategies for retirees and
+              pre-retirees
+            </p>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<section id="contact-us" class="contact-section">
-    <div class="container">
+    <section id="contact-us" class="contact-section">
+      <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <div class="section-heading">
-                    <h2 style="color: black;">Let’s Transform Your Business</h2>
-                    <p>Ready to discuss your consulting or training needs? Reach out for a free consultation.</p>
-                </div>
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2 style="color: black">Let’s Transform Your Business</h2>
+              <p>
+                Ready to discuss your consulting or training needs? Reach out
+                for a free consultation.
+              </p>
             </div>
+          </div>
         </div>
-        
+
         <div class="row contact-content">
-            <!-- Contact Form -->
-            <div class="col-lg-6">
-               <form id="contactForm" class="contact-form">
-    <!-- Status Messages Container -->
-    <div id="formStatus" class="alert-container" style="display: none;"></div>
+          <!-- Contact Form -->
+          <div class="col-lg-6">
+            <form id="contactForm" class="contact-form">
+              <!-- Status Messages Container -->
+              <div
+                id="formStatus"
+                class="alert-container"
+                style="display: none"
+              ></div>
 
-    <!-- Personal Information -->
-    <div class="row">
-        <div class="col-md-6">
-            <div class="form-group">
-                <input name="name" type="text" class="form-control" placeholder="Your Full Name*" required>
-                <small class="form-text">Please enter your full name</small>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="form-group">
-                <input name="email" type="email" class="form-control" placeholder="Email Address*" required>
-                <small class="form-text">We'll never share your email</small>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Contact & Service Details -->
-    <div class="row">
-        <div class="col-md-6">
-            <div class="form-group">
-                <input name="phone" type="tel" class="form-control" placeholder="Phone Number (Optional)">
-                <small class="form-text">Include country code if international</small>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="form-group">
-                <select class="form-control" name="service" required>
-                    <option value="" disabled selected>Service Interest*</option>
-                    <option value="sales">Sales Excellence</option>
-                    <option value="customer-service">Customer Service Mastery</option>
-                    <option value="product-dev">Product Innovation</option>
-                    <option value="finance">Financial Operations</option>
-                    <option value="operations">Business Operations</option>
-                    <option value="youth">Youth Entrepreneurship</option>
-                    <option value="tech">Tech Education</option>
-                    <option value="robotics">Robotics Programs</option>
-                    <option value="communication">Executive Communication</option>
-                    <option value="retirement">Wealth Preservation</option>
-                    <option value="other">Other Inquiry</option>
-                </select>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Message Field -->
-    <div class="form-group">
-        <textarea name="message" rows="5" class="form-control" placeholder="Tell us about your goals or challenges...*" required></textarea>
-        <small class="form-text">Please be as detailed as possible</small>
-    </div>
-    
-    <!-- Submit Button -->
-    <button type="submit" class="btn btn-primary btn-block">
-        <i class="fas fa-paper-plane mr-2"></i> Get Free Consultation
-    </button>
-    
-    <!-- Privacy Notice -->
-    <div class="privacy-notice mt-3">
-        <small class="text-muted">
-            By submitting this form, you agree to our <a href="/privacy">Privacy Policy</a>.
-        </small>
-    </div>
-</form>
-            </div>
-            
-            <!-- Map & Contact Info -->
-            <div class="col-lg-6">
-                <div class="contact-card">
-                    <!-- Google Maps Embed -->
-                    <div class="map-container">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3988.847853896344!2d36.6638628!3d-1.2406165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMcKwMTQnMjYuMiJTIDM2wrAzOSc1OS4yIkU!5e0!3m2!1sen!2sus!4v1718140000000!5m2!1sen!2sus" 
-                                width="100%" height="300" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
-                    
-                    <!-- Contact Details with Icons -->
-                    <div class="contact-info">
-                        <div class="info-item">
-                            <div class="info-icon" style="background-color: #4e8cff;">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="info-content">
-                                <h6>Our Location</h6>
-                                <p>Kikuyu, Next to Shell Gitaru</p>
-                            </div>
-                        </div>
-                        
-                        <div class="info-item">
-                            <div class="info-icon" style="background-color: #6f42c1;">
-                                <i class="fas fa-phone-alt"></i>
-                            </div>
-                            <div class="info-content">
-                                <h6>Call Us</h6>
-                                <p><a href="tel:+254700000000">+254 700 901080</a></p>
-                            </div>
-                        </div>
-                        
-                        <div class="info-item">
-                            <div class="info-icon" style="background-color: #fd7e14;">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="info-content">
-                                <h6>Email Us</h6>
-                                <p><a href="mailto:info@hoofstad.com">info@hoofstad.co.ke</a></p>
-                            </div>
-                        </div>
-                        
-                        <div class="info-item">
-                            <div class="info-icon" style="background-color: #20c997;">
-                                <i class="fas fa-clock"></i>
-                            </div>
-                            <div class="info-content">
-                                <h6>Working Hours</h6>
-                                <p>Mon-Fri: 8AM - 5PM</p>
-                            </div>
-                        </div>
-                    </div>
+              <!-- Personal Information -->
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input
+                      name="name"
+                      type="text"
+                      class="form-control"
+                      placeholder="Your Full Name*"
+                      required
+                    />
+                    <small class="form-text">Please enter your full name</small>
+                  </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input
+                      name="email"
+                      type="email"
+                      class="form-control"
+                      placeholder="Email Address*"
+                      required
+                    />
+                    <small class="form-text"
+                      >We'll never share your email</small
+                    >
+                  </div>
+                </div>
+              </div>
 
-        <footer class="site-footer">
-    <div class="container">
+              <!-- Contact & Service Details -->
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input
+                      name="phone"
+                      type="tel"
+                      class="form-control"
+                      placeholder="Phone Number (Optional)"
+                    />
+                    <small class="form-text"
+                      >Include country code if international</small
+                    >
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <select class="form-control" name="service" required>
+                      <option value="" disabled selected>
+                        Service Interest*
+                      </option>
+                      <option value="sales">Sales Excellence</option>
+                      <option value="customer-service">
+                        Customer Service Mastery
+                      </option>
+                      <option value="product-dev">Product Innovation</option>
+                      <option value="finance">Financial Operations</option>
+                      <option value="operations">Business Operations</option>
+                      <option value="youth">Youth Entrepreneurship</option>
+                      <option value="tech">Tech Education</option>
+                      <option value="robotics">Robotics Programs</option>
+                      <option value="communication">
+                        Executive Communication
+                      </option>
+                      <option value="retirement">Wealth Preservation</option>
+                      <option value="other">Other Inquiry</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Message Field -->
+              <div class="form-group">
+                <textarea
+                  name="message"
+                  rows="5"
+                  class="form-control"
+                  placeholder="Tell us about your goals or challenges...*"
+                  required
+                ></textarea>
+                <small class="form-text"
+                  >Please be as detailed as possible</small
+                >
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn btn-primary btn-block">
+                <i class="fas fa-paper-plane mr-2"></i> Get Free Consultation
+              </button>
+
+              <!-- Privacy Notice -->
+              <div class="privacy-notice mt-3">
+                <small class="text-muted">
+                  By submitting this form, you agree to our
+                  <a href="/privacy">Privacy Policy</a>.
+                </small>
+              </div>
+            </form>
+          </div>
+
+          <!-- Map & Contact Info -->
+          <div class="col-lg-6">
+            <div class="contact-card">
+              <!-- Google Maps Embed -->
+              <div class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3988.847853896344!2d36.6638628!3d-1.2406165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMcKwMTQnMjYuMiJTIDM2wrAzOSc1OS4yIkU!5e0!3m2!1sen!2sus!4v1718140000000!5m2!1sen!2sus"
+                  width="100%"
+                  height="300"
+                  style="border: 0; border-radius: 8px"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
+
+              <!-- Contact Details with Icons -->
+              <div class="contact-info">
+                <div class="info-item">
+                  <div class="info-icon" style="background-color: #4e8cff">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div class="info-content">
+                    <h6>Our Location</h6>
+                    <p>Kikuyu, Next to Shell Gitaru</p>
+                  </div>
+                </div>
+
+                <div class="info-item">
+                  <div class="info-icon" style="background-color: #6f42c1">
+                    <i class="fas fa-phone-alt"></i>
+                  </div>
+                  <div class="info-content">
+                    <h6>Call Us</h6>
+                    <p><a href="tel:+254700000000">+254 700 901080</a></p>
+                  </div>
+                </div>
+
+                <div class="info-item">
+                  <div class="info-icon" style="background-color: #fd7e14">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <div class="info-content">
+                    <h6>Email Us</h6>
+                    <p>
+                      <a href="mailto:info@hoofstad.com">info@hoofstad.co.ke</a>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="info-item">
+                  <div class="info-icon" style="background-color: #20c997">
+                    <i class="fas fa-clock"></i>
+                  </div>
+                  <div class="info-content">
+                    <h6>Working Hours</h6>
+                    <p>Mon-Fri: 8AM - 5PM</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
         <div class="row">
-            <div class="col-md-4 col-sm-12 footer-copyright">
-                <p>Copyright &copy; 2025 Hoofstad Limited<br>All Rights Reserved</p>
+          <div class="col-md-4 col-sm-12 footer-copyright">
+            <p>
+              Copyright &copy; 2025 Hoofstad Limited<br />All Rights Reserved
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-12 footer-social">
+            <ul class="social-icons">
+              <li>
+                <a
+                  href="https://web.facebook.com/profile.php?id=100072382425043"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://x.com/HoofstadLimited"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/company/107676160/admin/dashboard/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/hoofstadbusiness/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://wa.me/message/NG3IEJSCSMSMJ1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fab fa-whatsapp"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 col-sm-12 footer-back-top">
+            <div class="back-to-top">
+              <a href="#top">
+                <i class="fas fa-angle-up"></i>
+                Back to Top
+              </a>
             </div>
-            
-            <div class="col-md-4 col-sm-12 footer-social">
-                <ul class="social-icons">
-                    <li><a href="https://web.facebook.com/profile.php?id=100072382425043" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="https://x.com/HoofstadLimited" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="https://www.linkedin.com/company/107676160/admin/dashboard/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li><a href="https://www.instagram.com/hoofstadbusiness/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://wa.me/message/NG3IEJSCSMSMJ1" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a></li>
-                </ul>
-            </div>
-            
-            <div class="col-md-4 col-sm-12 footer-back-top">
-                <div class="back-to-top">
-                    <a href="#top">
-                        <i class="fas fa-angle-up"></i>
-                        Back to Top
-                    </a>
-                </div>
-            </div>
+          </div>
         </div>
-    </div>
-</footer>
-        
-        <script src="../static/js/vendor/jquery-1.11.0.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
-        <script src="../static/js/bootstrap.js"></script>
-        <script src="../static/js/plugins.js"></script>
-        <script src="../static/js/main.js"></script>
+      </div>
+    </footer>
 
-        <!-- Google Map -->
-        <script src="https://maps.google.com/maps/api/js?sensor=true"></script>
-        <script src="../static/js/vendor/jquery.gmap3.min.js"></script>
+    <script src="../static/js/vendor/jquery-1.11.0.min.js"></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="js/vendor/jquery-1.11.0.min.js"><\/script>'
+        );
+    </script>
+    <script src="../static/js/bootstrap.js"></script>
+    <script src="../static/js/plugins.js"></script>
+    <script src="../static/js/main.js"></script>
 
-        <script type="text/javascript">
-        $(document).ready(function() {
-            
-            // mobile nav toggle
-            $('#nav-toggle').on('click', function (event) {
-                event.preventDefault();
-                $('#main-nav').toggleClass("open");
-            });
+    <!-- Google Map -->
+    <script src="https://maps.google.com/maps/api/js?sensor=true"></script>
+    <script src="../static/js/vendor/jquery.gmap3.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        // mobile nav toggle
+        $("#nav-toggle").on("click", function (event) {
+          event.preventDefault();
+          $("#main-nav").toggleClass("open");
         });
-        </script>
-        <script>
-            document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    const form = e.target;
-    const submitBtn = form.querySelector('button[type="submit"]');
-    const statusDiv = document.getElementById('formStatus');
-    
-    // Show loading state
-    submitBtn.disabled = true;
-    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Sending...';
-    
-    // Hide previous messages
-    statusDiv.style.display = 'none';
-    
-    // Collect form data
-    const formData = new FormData(form);
-    
-    // Send AJAX request
-    fetch('/submit-form', {
-        method: 'POST',
-        body: formData,
-        headers: {
-            'Accept': 'application/json'
-        }
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.success) {
-            statusDiv.innerHTML = `
+      });
+    </script>
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const form = e.target;
+          const submitBtn = form.querySelector('button[type="submit"]');
+          const statusDiv = document.getElementById("formStatus");
+
+          // Show loading state
+          submitBtn.disabled = true;
+          submitBtn.innerHTML =
+            '<i class="fas fa-spinner fa-spin mr-2"></i> Sending...';
+
+          // Hide previous messages
+          statusDiv.style.display = "none";
+
+          // Collect form data
+          const formData = new FormData(form);
+
+          // Send AJAX request
+          fetch("/submit-form", {
+            method: "POST",
+            body: formData,
+            headers: {
+              Accept: "application/json",
+            },
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              if (data.success) {
+                statusDiv.innerHTML = `
                 <div class="alert alert-success">
                     ${data.message}
                 </div>
             `;
-            form.reset(); // Clear form on success
-        } else {
-            statusDiv.innerHTML = `
+                form.reset(); // Clear form on success
+              } else {
+                statusDiv.innerHTML = `
                 <div class="alert alert-danger">
                     ${data.message}
                 </div>
             `;
-        }
-        statusDiv.style.display = 'block';
-    })
-    .catch(error => {
-        statusDiv.innerHTML = `
+              }
+              statusDiv.style.display = "block";
+            })
+            .catch((error) => {
+              statusDiv.innerHTML = `
             <div class="alert alert-danger">
                 There was an error submitting your form. Please try again later.
             </div>
         `;
-        statusDiv.style.display = 'block';
-    })
-    .finally(() => {
-        submitBtn.disabled = false;
-        submitBtn.innerHTML = '<i class="fas fa-paper-plane mr-2"></i> Get Free Consultation';
-    });
-});
-        </script>
-        
-    </body>
+              statusDiv.style.display = "block";
+            })
+            .finally(() => {
+              submitBtn.disabled = false;
+              submitBtn.innerHTML =
+                '<i class="fas fa-paper-plane mr-2"></i> Get Free Consultation';
+            });
+        });
+    </script>
+  </body>
 </html>

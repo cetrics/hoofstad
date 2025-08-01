@@ -1,0 +1,24 @@
+2025-07-04 13:56:32,438 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-04 13:56:32,439 [INFO] [33mPress CTRL+C to quit[0m
+2025-07-04 13:56:38,212 [INFO] 127.0.0.1 - - [04/Jul/2025 13:56:38] "GET / HTTP/1.1" 200 -
+2025-07-04 13:56:38,495 [INFO] 127.0.0.1 - - [04/Jul/2025 13:56:38] "[36mGET /static/css/templatemo_misc.css HTTP/1.1[0m" 304 -
+2025-07-04 13:56:38,507 [INFO] 127.0.0.1 - - [04/Jul/2025 13:56:38] "[36mGET /static/js/vendor/modernizr-2.6.1-respond-1.1.0.min.js HTTP/1.1[0m" 304 -
+2025-07-04 13:56:38,508 [INFO] 127.0.0.1 - - [04/Jul/2025 13:56:38] "[36mGET /static/css/font-awesome.css HTTP/1.1[0m" 304 -
+2025-07-04 13:56:38,527 [INFO] 127.0.0.1 - - [04/Jul/2025 13:56:38] "[36mGET /static/css/animate.css HTTP/1.1[0m" 304 -
+2025-07-04 13:56:38,531 [INFO] 127.0.0.1 - - [04/Jul/2025 13:56:38] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-07-04 13:56:38,541 [INFO] 127.0.0.1 - - [04/Jul/2025 13:56:38] "[36mGET /static/img/hoofstad_logo.png HTTP/1.1[0m" 304 -
+2025-07-04 13:56:38,548 [INFO] 127.0.0.1 - - [04/Jul/2025 13:56:38] "[36mGET /static/css/templatemo_style.css HTTP/1.1[0m" 304 -
+2025-07-04 13:56:38,553 [INFO] 127.0.0.1 - - [04/Jul/2025 13:56:38] "[36mGET /static/img/first-service-icon.png HTTP/1.1[0m" 304 -
+2025-07-04 13:56:38,563 [INFO] 127.0.0.1 - - [04/Jul/2025 13:56:38] "[36mGET /static/img/second-service-icon.png HTTP/1.1[0m" 304 -
+2025-07-04 13:56:38,564 [INFO] 127.0.0.1 - - [04/Jul/2025 13:56:38] "[36mGET /static/css/owl-carousel.css HTTP/1.1[0m" 304 -
+2025-07-04 13:56:38,589 [INFO] 127.0.0.1 - - [04/Jul/2025 13:56:38] "[36mGET /static/img/third-service-icon.png HTTP/1.1[0m" 304 -
+2025-07-04 13:56:38,591 [INFO] 127.0.0.1 - - [04/Jul/2025 13:56:38] "[36mGET /static/js/vendor/jquery-1.11.0.min.js HTTP/1.1[0m" 304 -
+2025-07-04 13:56:38,653 [INFO] 127.0.0.1 - - [04/Jul/2025 13:56:38] "[36mGET /static/js/plugins.js HTTP/1.1[0m" 304 -
+2025-07-04 13:56:38,657 [INFO] 127.0.0.1 - - [04/Jul/2025 13:56:38] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2025-07-04 13:56:38,661 [INFO] 127.0.0.1 - - [04/Jul/2025 13:56:38] "[36mGET /static/js/vendor/jquery.gmap3.min.js HTTP/1.1[0m" 304 -
+2025-07-04 13:56:38,663 [INFO] 127.0.0.1 - - [04/Jul/2025 13:56:38] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-07-04 13:56:38,694 [INFO] 127.0.0.1 - - [04/Jul/2025 13:56:38] "[36mGET /static/img/background.jpeg HTTP/1.1[0m" 304 -
+2025-07-04 13:56:38,712 [INFO] 127.0.0.1 - - [04/Jul/2025 13:56:38] "[36mGET /static/img/services-bg.jpg HTTP/1.1[0m" 304 -
+2025-07-04 13:56:39,314 [INFO] 127.0.0.1 - - [04/Jul/2025 13:56:39] "[36mGET /static/img/hoofstad_logo.png HTTP/1.1[0m" 304 -
+2025-07-04 13:57:02,836 [INFO] 127.0.0.1 - - [04/Jul/2025 13:57:02] "POST /submit-form HTTP/1.1" 200 -
